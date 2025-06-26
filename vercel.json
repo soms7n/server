@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/api/user/(?<username>[^/]+)",
-      "dest": "/api/user.js?username=$username"
+      "dest": "/api/twitter-proxy.js?username=$username"
     }
   ]
 }
