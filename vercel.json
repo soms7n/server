@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "src": "/api/user/(?<username>[^/]+)",
+      "dest": "/api/user.js?username=$username"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/api"
+    }
+  ]
+}
